@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="O6Gxr1DG63lVcpOdwEol">
+    <mxGraphModel dx="3497" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="Multimedia Application Requirements&#xa;&#xa;Delay bound, jitter tolerance, target bitrate, loss tolerance" vertex="1">
+          <mxGeometry height="100" width="300" x="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="QoS Metric Mapping&#xa;&#xa;Delay, jitter, loss/PDR, throughput, bandwidth, stability, overhead" vertex="1">
+          <mxGeometry height="110" width="300" x="350" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="Network State Collection&#xa;&#xa;Link quality, queue delay, contention, residual energy, mobility effects" vertex="1">
+          <mxGeometry height="110" width="300" x="350" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="QoS-Aware Route Computation&#xa;&#xa;Constraint check + scoring / multi-metric ranking" vertex="1">
+          <mxGeometry height="100" width="300" x="350" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="Routing Strategy Selection&#xa;&#xa;Single-path / Multipath / Optimization / Cross-layer / SDN control" vertex="1">
+          <mxGeometry height="110" width="300" x="350" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="Packet Scheduling and Forwarding&#xa;&#xa;Priority handling, path selection, retransmission policy" vertex="1">
+          <mxGeometry height="100" width="300" x="350" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;fontStyle=1;" value="QoS Monitoring and Feedback Adaptation&#xa;&#xa;Detect degradation → re-route / adjust priorities / update paths" vertex="1">
+          <mxGeometry height="110" width="300" x="350" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="b1" style="endArrow=classic;" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="b2" style="endArrow=classic;" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="b3" style="endArrow=classic;" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="b4" style="endArrow=classic;" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="b5" style="endArrow=classic;" target="b6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="b6" style="endArrow=classic;" target="b7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" edge="1" parent="1" source="b7" style="endArrow=classic;strokeColor=black;" target="b3" value="Updated measurements / QoS feedback">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="960" />
+              <mxPoint x="90" y="375" />
+            </Array>
+            <mxPoint x="200" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

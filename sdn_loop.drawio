@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="7027kL61XCrwNa2sAwrZ">
+    <mxGraphModel dx="1397" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;fontSize=18;fontStyle=1;" value="SDN / Software-Defined QoS Routing Control Loop (for Multimedia)" vertex="1">
+          <mxGeometry height="50" width="800" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Multimedia Source&#xa;(Video/Audio packet)" vertex="1">
+          <mxGeometry height="70" width="170" x="50" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Ingress Switch / Edge Node&#xa;(Classify flow)" vertex="1">
+          <mxGeometry height="70" width="180" x="250" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Monitoring Module&#xa;(Delay, loss, bandwidth)" vertex="1">
+          <mxGeometry height="70" width="180" x="460" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="SDN Controller&#xa;(QoS estimation + path selection)" vertex="1">
+          <mxGeometry height="70" width="180" x="670" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Rule Installer&#xa;(Install flow rules / priorities)" vertex="1">
+          <mxGeometry height="70" width="180" x="880" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Forwarding Data Plane&#xa;(Packets follow selected path)" vertex="1">
+          <mxGeometry height="70" width="200" x="1090" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="b1" style="endArrow=classic;" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="b2" style="endArrow=classic;" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="b3" style="endArrow=classic;" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="b4" style="endArrow=classic;" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="b5" style="endArrow=classic;" target="b6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" edge="1" parent="1" source="b6" style="endArrow=classic;dashed=1;" target="b3" value="QoS feedback / updated stats">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
